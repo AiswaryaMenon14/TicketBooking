@@ -1,6 +1,7 @@
 import React from "react";
 import Row from "../seatRow/Index";
 import useStore from "../../store";
+import toast, { Toaster } from 'react-hot-toast';
 
 function Index() {
   const { count, addSeat, selectedSeats } = useStore();
@@ -26,7 +27,9 @@ function Index() {
     } else if (selectedSeats.length < 8) {
       addSeat({ id, name, type, price });
     } else {
-      alert("You can only select up to 8 seats");
+  toast('You can only select up to 8 seats')
+
+      // alert("You can only select up to 8 seats");
     }
   };
 
@@ -38,6 +41,8 @@ function Index() {
           <Row row={row} seats={seats} handleClick={handleClick} />
         </div>
       ))}
+    <Toaster />
+
     </>
   );
 }

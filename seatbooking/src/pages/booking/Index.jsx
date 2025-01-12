@@ -2,9 +2,14 @@ import React from 'react'
 import Rows from "../rows/Index"
 import Button from '../../components/Button'
 import Summary from '../summary/Index'
+import useStore from "../../store";
+import toast, { Toaster } from 'react-hot-toast';
 function Index() {
+  const selectedSeats = useStore((state) => state.selectedSeats);
+
   const handleConfirmation=()=>{
-   alert('Confirm the ticket')
+  //  alert('Confirm the ticket')
+  toast('Ticket Confirmed')
   }
   return (
     <>
@@ -13,12 +18,14 @@ function Index() {
 <Rows/>
 
     </div>
-    <div className='flex px-9 mt-5'>
+    {selectedSeats.length>0&& <div className='flex px-9 mt-5'>
     <Summary/>
     <div className='ml-auto'>
     <Button handleConfirmation={handleConfirmation}/>
+    <Toaster />
     </div>
-    </div>
+    </div>}
+   
 </>
   )
 }
