@@ -29,21 +29,20 @@ function Index() {
     } else {
   toast('You can only select up to 8 seats')
 
-      // alert("You can only select up to 8 seats");
     }
   };
 
   return (
-    <>
-      <h1 className="text-lg font-bold mb-4">Seats</h1>
+    <div>
+      <h1 className="sm:text-sm md:text-lg font-bold mb-4">Seats</h1>
       {rows.map((row) => (
-        <div key={row.id} className="mb-4">
+        <div key={row.id} className="mb-4 ">
           <Row row={row} seats={seats} handleClick={handleClick} />
         </div>
       ))}
     <Toaster />
 
-    </>
+    </div>
   );
 }
 

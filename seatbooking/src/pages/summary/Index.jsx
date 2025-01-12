@@ -11,13 +11,13 @@ function Index() {
   );
   return (
     <div>
-      <h3 className="font-bold text-2xl underline pb-3">Summary</h3>
-      <span className="font-bold">Selected Seats :</span>{" "}
-      {selectedSeats.map((seats) => (
-        <span className="px-2"key={seats.id}>{seats.id}</span>
+      <h3 className="font-bold text-md md:text-2xl underline pb-1 md:pb-3">Summary</h3>
+      <span >Selected Seats :</span>{" "}
+      {selectedSeats.map((seat,index) => (
+        <span className="font-bold"key={seat.id}>{seat.id}{index===selectedSeats.length-1?'':', '}</span>
       ))}
       <br />
-      <span className="font-bold">Total Price :</span> {totalPrice}
+      Total Price : <span className="font-bold">Rs. {totalPrice}</span>
     </div>
   );
 }

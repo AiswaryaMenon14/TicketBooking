@@ -4,21 +4,20 @@ import Button from '../../components/Button'
 import Summary from '../summary/Index'
 import useStore from "../../store";
 import toast, { Toaster } from 'react-hot-toast';
-function Index() {
+function Booking() {
   const selectedSeats = useStore((state) => state.selectedSeats);
 
   const handleConfirmation=()=>{
-  //  alert('Confirm the ticket')
   toast('Ticket Confirmed')
   }
   return (
-    <>
-    <h1 className='text-3xl font-bold text-center'>Seat booking</h1>
-    <div className='px-9'>
+    <div className='md:max-w-screen-md m-auto  py-3'>
+    <h1 className='md:text-3xl xs:text-base font-bold text-center'>Seat booking</h1>
+    <div className="px-4 sm:px-6 md: overflow-auto ">
 <Rows/>
 
     </div>
-    {selectedSeats.length>0&& <div className='flex px-9 mt-5'>
+    {selectedSeats.length>0&& <div className='flex px-6 mt-5'>
     <Summary/>
     <div className='ml-auto'>
     <Button handleConfirmation={handleConfirmation}/>
@@ -26,8 +25,8 @@ function Index() {
     </div>
     </div>}
    
-</>
+</div>
   )
 }
 
-export default Index
+export default Booking
