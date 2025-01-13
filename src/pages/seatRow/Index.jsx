@@ -1,7 +1,7 @@
 import React from "react";
 import Seats from "../../components/Seats";
 
-function Index({ row, seats, handleClick }) {
+function SeatRow({ row, seats, handleClick }) {
   return (
     <>
      
@@ -19,4 +19,4 @@ function Index({ row, seats, handleClick }) {
   );
 }
 
-export default Index;
+export default SeatRow;

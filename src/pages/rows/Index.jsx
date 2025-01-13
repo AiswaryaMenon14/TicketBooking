@@ -1,9 +1,8 @@
 import React from "react";
-import Row from "../seatRow/Index";
 import useStore from "../../store";
 import toast, { Toaster } from 'react-hot-toast';
-
-function Index() {
+import SeatRow from "../SeatRow"
+function Rows() {
   const { count, addSeat, selectedSeats } = useStore();
 
   const seats = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -34,10 +33,9 @@ function Index() {
 
   return (
     <div>
-      <h1 className="sm:text-sm md:text-lg font-bold mb-4">Seats</h1>
       {rows.map((row) => (
         <div key={row.id} className="mb-4 ">
-          <Row row={row} seats={seats} handleClick={handleClick} />
+          <SeatRow row={row} seats={seats} handleClick={handleClick} />
         </div>
       ))}
     <Toaster />
@@ -46,4 +44,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Rows;
