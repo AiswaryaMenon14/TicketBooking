@@ -22,7 +22,7 @@ function Booking() {
       </div>
       {selectedSeats.length > 0 ? (
         <div className="flex px-6 mt-5">
-          <Summary />
+          <Summary/>
           <div className="ml-auto">
             <Button handleConfirmation={handleConfirmation} />
             <Toaster />
