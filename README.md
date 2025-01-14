@@ -7,9 +7,10 @@ Features
 Seat Layout:
 - 6 rows x 10 seats grid, uniquely identified (e.g., "A1", "A2").
 -	Color-coded seats based on pricing:
-       	₹100 (Silver - Front rows)
-       	₹150 (Gold - Middle rows)
-       	₹200 (Platinum - Back rows).
+  
+       	-₹100 (Silver - Front rows)
+       	-₹150 (Gold - Middle rows)
+       	-₹200 (Platinum - Back rows).
        
 Dynamic Pricing:
 -	Real-time updates of seat prices and total cost.
