@@ -1,7 +1,7 @@
 import React from "react";
 import Seats from "../../components/Seats";
 
-function SeatRow({ row, seats, handleClick }) {
+function SeatDisplay({ row, seats, handleClick }) {
   return (
     <>
      
@@ -19,4 +19,4 @@ function SeatRow({ row, seats, handleClick }) {
   );
 }
 
-export default SeatRow;
+export default SeatDisplay;

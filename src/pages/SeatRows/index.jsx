@@ -1,8 +1,8 @@
 import React from "react";
 import useStore from "../../store";
 import toast, { Toaster } from 'react-hot-toast';
-import SeatRow from "../SeatRow"
-function Rows() {
+import SeatRow from "../SeatDisplay"
+function SeatRows() {
   const { count, addSeat, selectedSeats } = useStore();
 
   const seats = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -44,4 +44,4 @@ function Rows() {
   );
 }
 
-export default Rows;
+export default SeatRows;

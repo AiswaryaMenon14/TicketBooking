@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../components/Button";
 import useStore from "../../store";
 import toast, { Toaster } from "react-hot-toast";
-import Rows from "../Rows"
+import Rows from "../SeatRows"
 import Summary from "../Summary"
 function Booking() {
   const selectedSeats = useStore((state) => state.selectedSeats);
