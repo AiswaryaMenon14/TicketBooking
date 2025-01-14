@@ -1,7 +1,8 @@
-#Interactive Seat Booking System
-#Objective
+Interactive Seat Booking System
+
+Objective
 A React-based seat booking system built with Vite and styled using Tailwind CSS. Users can select seats, view dynamic pricing, and book their selections.
-#Features
+Features
 *Seat Layout:
 - 6 rows x 10 seats grid, uniquely identified (e.g., "A1", "A2").
 -	Color-coded seats based on pricing:
@@ -17,12 +18,12 @@ A React-based seat booking system built with Vite and styled using Tailwind CSS.
 -	Displays selected seats, their prices, and total cost.
 o	"Book Now" button with a confirmation message.
 
-#Technologies Used
+Technologies Used
 -	 React JS (via Vite)
 -	 Tailwind CSS for styling
 -	 JavaScript (ES6)
 -	 
-#How to Run
+How to Run
     1.	Clone the repository:
             git clone <repository-link>  
    2.	Navigate to the project folder:
