@@ -5,11 +5,11 @@ function Seats({ rowName, seat, handleClick }) {
   const selectedSeats = useStore((state) => state.selectedSeats);
   const getSeatClass = () => {
     if (rowName.row_type === "Silver") {
-      return "bg-gray-300"; // Silver tier color
+      return "bg-gray-300"; 
     } else if (rowName.row_type === "Gold") {
-      return "bg-yellow-400"; // Gold tier color
+      return "bg-yellow-400"; 
     } else if (rowName.row_type === "Platinum") {
-      return "bg-blue-500"; // Platinum tier color
+      return "bg-blue-500"; 
     } else {
       return "bg-gray-200";
     }
@@ -20,7 +20,7 @@ function Seats({ rowName, seat, handleClick }) {
       <div className="m-2 md:m-3 flex justify-center items-center flex-col">
         <button
           key={`${rowName.row_name}${seat}`}
-          className={`border border-gray-300 p-1 md:p-4 md:w-12 w-8 text-xs rounded text-center rounded cursor-pointer ${
+          className={`border border-gray-300 p-1 md:p-4 md:w-12 w-8 text-xs rounded text-center cursor-pointer ${
             selectedSeats.some(
               (selected) => selected.id === `${rowName.row_name}${seat}`
             )
