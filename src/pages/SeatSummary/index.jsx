@@ -1,7 +1,7 @@
 import React from "react";
 import useStore from "../../store";
 
-function Summary() {
+function SeatSummary() {
   const selectedSeats = useStore((state) => state.selectedSeats);
 
   // Price of the seats
@@ -22,4 +22,4 @@ function Summary() {
   );
 }
 
-export default Summary;
+export default SeatSummary;
