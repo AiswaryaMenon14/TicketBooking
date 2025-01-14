@@ -3,7 +3,7 @@ import Button from "../../components/Button";
 import useStore from "../../store";
 import toast, { Toaster } from "react-hot-toast";
 import Rows from "../Rows"
-import SeatSummary from "../SeatSummary"
+import Summary from "../Summary/Index";
 function Booking() {
   const selectedSeats = useStore((state) => state.selectedSeats);
 
@@ -22,7 +22,7 @@ function Booking() {
       </div>
       {selectedSeats.length > 0 ? (
         <div className="flex px-6 mt-5">
-          <SeatSummary />
+          <Summary/>
           <div className="ml-auto">
             <Button handleConfirmation={handleConfirmation} />
             <Toaster />
