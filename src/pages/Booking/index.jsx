@@ -1,9 +1,9 @@
 import React from "react";
 import Button from "../../components/Button";
-import Summary from "../../pages/Summary";
 import useStore from "../../store";
 import toast, { Toaster } from "react-hot-toast";
 import Rows from "../Rows"
+import Summary from "../Summary/index"
 function Booking() {
   const selectedSeats = useStore((state) => state.selectedSeats);
 
