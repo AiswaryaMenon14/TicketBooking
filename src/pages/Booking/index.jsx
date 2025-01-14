@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../components/Button";
-import Summary from "../Summary";
+import Summary from "../../pages/Summary";
 import useStore from "../../store";
 import toast, { Toaster } from "react-hot-toast";
 import Rows from "../Rows"
